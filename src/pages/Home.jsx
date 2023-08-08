@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <div>
       <AddBilgi postBilgiler = {postBilgiler}/>
-      <BilgiList bilgiler= {bilgiler} deleteBilgiler={deleteBilgiler}/>
+      <BilgiList bilgiler= {bilgiler} deleteBilgiler={deleteBilgiler} getBilgiler={getBilgiler}/>
     </div>
   )
 }
