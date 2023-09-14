@@ -35,10 +35,6 @@ const Home = () => {
   }
 
   
-
-  console.log(bilgiler);
-  
-
   return (
     <div>
       <AddBilgi postBilgiler = {postBilgiler}/>

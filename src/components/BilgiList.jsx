@@ -30,6 +30,15 @@ const BilgiList = ({ bilgiler, deleteBilgiler,getBilgiler }) => {
                   <td>{title}</td>
                   <td>{description} </td>
                   <td className="text-center ">
+                    
+                    <FaEdit
+                      data-bs-toggle="modal"
+                      data-bs-target="#editModal"
+                      size={20}
+                      type="button"
+                      className="me-2 text-warning cursor-pointer me-3"
+                      onClick={()=>setItem(eleman)}
+                    />
                     <AiFillDelete
                       type="button"
                       size={22}
@@ -37,14 +46,6 @@ const BilgiList = ({ bilgiler, deleteBilgiler,getBilgiler }) => {
                       //!burada id göndermek zorunda değiliz title da gönderilebilir
   
                       onClick={() => deleteBilgiler(id)}
-                    />
-                    <FaEdit
-                      data-bs-toggle="modal"
-                      data-bs-target="#editModal"
-                      size={20}
-                      type="button"
-                      className="me-2 text-warning cursor-pointer"
-                      onClick={()=>setItem(eleman)}
                     />
                   </td>
                 </tr>
